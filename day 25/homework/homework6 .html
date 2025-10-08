@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departures Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    table {
+      border-collapse: collapse;
+      width: 750px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #e9ebf0;
+      font-weight: bold;
+    }
+    td input {
+      width: 100%;
+      border: 1px solid #ccc;
+      padding: 4px 6px;
+      border-radius: 5px;
+    }
+    button {
+      padding: 4px 8px;
+      margin: 2px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Train Company</th>
+      <th>Destination</th>
+      <th>Time</th>
+      <th>Platform</th>
+      <th>Date</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Great Wester</td>
+      <td>London</td>
+      <td>01:00:00</td>
+      <td>1</td>
+      <td>2017-01-31</td>
+      <td>
+        <button>edit</button>
+        <button>delete</button>
+        <button>save</button>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>National</td>
+      <td>Exeter</td>
+      <td>23:03:00</td>
+      <td>3</td>
+      <td>2017-02-01</td>
+      <td>
+        <button>edit</button>
+        <button>delete</button>
+        <button>save</button>
+      </td>
+    </tr>
+    <tr>
+      <td>New ID will be given automatically</td>
+      <td><input type="text" placeholder="Train Company"></td>
+      <td><input type="text" placeholder="Destination"></td>
+      <td><input type="text" placeholder="Time"></td>
+      <td><input type="text" placeholder="Platform"></td>
+      <td><input type="text" placeholder="Date"></td>
+      <td><button>Insert Row</button></td>
+    </tr>
+  </table>
+</body>
+</html>
